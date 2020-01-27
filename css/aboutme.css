@@ -1,0 +1,254 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	
+}
+
+
+
+
+/*Navbar
+CSS used to redefine Navbar layout*/
+
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.main-nav{
+	float: right;
+	margin-top: 40px;
+	
+}
+.active{
+	border-radius: 50px;
+	font-size: 130%;
+	transition: 0.2s ease-out;
+	background-color: grey;
+	border:0px solid;
+	padding: 5px 30px;
+}
+.main-nav li{
+	float: left;
+	list-style: none;
+	border-radius: 200px;
+	margin: 8px;
+}
+.main-nav li a{
+	padding: 10px 10px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 100%;
+	font-weight: 100;
+}
+.main-nav li a:hover{
+	transition: 0.3s ease-out;
+	border-bottom: 3px solid white;
+}
+
+.logoe{
+	padding-top: 40px;
+	margin-left: 20px;
+	font-weight: bold;
+	
+}
+.logoe:hover{
+	transition: transform 0.5s ease;
+	border-bottom: red 2px;
+}
+
+.logoe a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: 20px;
+	font-size: 170%;
+	font-weight: 100;
+	font-family: 'Fredericka the Great', cursive
+	
+}
+#logo:hover{
+	font-size: 200%;
+	transition: 0.2s ease-out;
+	
+}
+.main-nav li{
+	display: block;
+	margin-top: 10px;
+}
+
+
+/*Content
+CSS used to redefine content/body layout*/
+
+body{
+	/*to set-up the overall format of the body*/
+	font-size: 20px;
+	color: #fff;
+	font-family: 'Flamenco', cursive;
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(../images/png/backgr.png); /*background-image with some gradient*/  
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#container{
+	width: 100%;
+	margin: 0%;
+	overflow: hidden;
+}
+.boxes{
+	margin-top: 20px;
+	float: left;
+	text-align: center;
+	color: black;	
+	padding: 10px;
+	border-radius: 40px;
+	align-items: center;
+	margin-left: 20%;	
+}
+
+.profile{
+	width: 215px;
+	height: 215px;
+	border-radius: 20px;
+	float: left;
+	margin: 5%;
+}
+
+.boxes .box1{	
+	float: left;
+	width: 900px;
+	padding: 30px;
+	background-color: white;
+	margin-left: auto;
+	font-size: 120%;
+	border-radius: 30px;
+	text-align: left;
+	color: #2a3545;
+	box-shadow: 0px 5px 20px black;
+}
+
+/*Redesigning the buttons and hover effects*/
+
+.CV{
+	display: inline-block;
+	margin: 10px;
+	padding:9px 10px 9px 10px;
+	border-radius: 200px;
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	background: #1dc06c;
+    box-shadow: 0 20px 40px -20px #1dc06c;
+}
+.CV:hover{
+	box-shadow: none;
+	background-color: lightgreen;
+	color: black;
+	transition: 0.2s ease-out;
+	opacity: 2px;
+}
+
+
+.boxes .box2 {
+	float: left;
+	width: 18%;
+	padding: 3px;		
+	margin-left: 20px;
+	background-color: none;
+	font-style: italic;
+	font-size: 16px;
+
+}
+.box2 a{
+	text-decoration: none;
+	color: darkred;
+}
+.boxes .box2 .box2a {
+	
+	padding: 0px;	
+	margin-bottom: 20px;
+	align-items: center;
+	background-color: white;
+	border-radius: 50px;
+	border-radius: 20px;
+	width: 175%;
+	box-shadow: 0px 5px 20px black;
+	
+}
+
+.boxes .box2 .box2b {
+	
+	padding: 0px;	
+	margin-bottom: 20px;
+	align-items: center;
+	background-color: white;
+	border-radius: 20px;
+	width: 175%;
+	box-shadow: 0px 5px 20px black;
+
+}
+
+.boxes .box2 a:hover{
+	transition: 0.2s ease-out;
+	text-decoration: none;
+	color: white;
+	background-color: darkblue;
+	border-radius: 40px;
+	margin: 15%;
+	padding: 10px; 
+	font-size: 130%;
+	transition: 0.4s ease;
+	
+}
+.boxes .box2 .box2a:hover{
+	border:3px solid black;
+	box-shadow: 0px 5px 20px gray;
+	transition: 0.2s ease-out;
+}
+.boxes .box2 .box2b:hover{
+	border:3px solid black;
+	box-shadow: 0px 5px 20px gray;
+	transition: 0.2s ease-out;
+}
+
+/*Setting up the image slider*/
+.c-section{
+	margin-top: 50px;
+	background-color:transparent;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	position: relative;
+	height: 650px;
+}
+.c-container{
+	width: 50%;
+	margin: auto;
+	overflow: hidden;
+	transition: 0.2s ease-out;
+	border-radius: 30px;
+	margin-left: 20.7%;
+	position: absolute;
+	display: block;
+}
+.c-container{
+	box-shadow: 0px 5px 20px black;
+	transition: 0.2s ease-out;
+}
+.c-slide{
+	display: flex;
+	height: 600px;
+}
+
+/*Designing the footer*/
+
+footer {
+    height: 50px;
+    background: #031b33;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+

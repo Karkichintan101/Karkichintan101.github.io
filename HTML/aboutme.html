@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chintan Karki | About me</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/aboutme.css"><!-- CSS3 file is linked through this. -->
+
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<!-- to import fonts from google-fonts,the link is imported.  -->
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<!-- to import fonts from google-fonts,the link is imported.  -->
+	<style>
+		/*Internal CSS to re-design buttons in image slider.*/
+		#prevBtn {
+			position: absolute;
+			top: 250px;
+			z-index: 10;
+			left: 22.5%;
+			cursor: pointer;
+
+		}
+
+		#nextBtn {
+			position: absolute;
+			top: 250px;
+			z-index: 10;
+			right: 32%;
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<ul class="main-nav " id="check-class">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li class="active"><a href="aboutme.html">About Me</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+					<li><a href="References.html">References</a></li>
+
+				</ul>
+				<div class="logoe">
+					<a href="index.html" id="logo">CHINTAN</a>
+				</div>
+
+
+			</div>
+
+		</nav>
+	</header>
+	<section id="container">
+		<div class="boxes"><br><br>
+
+			<!-- The box that helps you understand me a bit more. It has my brief profile and some facts about me -->
+			<!-- There is table that contains my informations -->
+			<div class="box1">
+				<h3> Chintan Karki <br> </h3>
+				<br>
+				<img class="profile" src="../images/profile.jpg"> <!-- Importing my profile in the tab. -->
+
+				<!-- Table showing my brief information --><br>
+
+				<table style="width:auto">
+					<tr>
+						<td>Name</td>
+						<td>:Chintan Karki</td>
+					</tr>
+					<tr>
+						<td>Age</td>
+						<td>:19 years old, Generation Z!</td>
+					</tr>
+					<tr>
+						<td>Date Of Birth </td>
+						<td>:March 9th of 2001</td>
+					</tr>
+					<tr>
+						<td>Birth Place </td>
+						<td>:Biratnagar, Nepal</td>
+					</tr>
+					<tr>
+						<td>Address<br><br></td>
+						<td>:Biratnagar-5, Morang<br>Province 01, Nepal</td>
+					</tr>
+					<tr>
+						<td>Languages</td>
+						<td>Nepali, English, Hindi</td>
+					</tr>
+					<tr>
+						<td>Phone</td>
+						<td>+977-98153-11-290</td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td>Karkichintan2001@gmail.com</td>
+					</tr>
+
+				</table>
+
+				<p> <br><br><u>INTERESTS</u><br><br>
+
+				</p>
+				<!-- Brief about my interests -->
+
+				I love drawing stuffs. It has always been my favourite field of interest. Most of my inspirations in
+				this field come from the Renissance period. Neoclassism is one of my favourate movement in art history
+				just because the detailed and realistic styles.<br><i><b>
+						Stan Prokopenko, Kim Jung Gi, Peter Hans, Takehiko Inoue and Kark Kopinski
+					</b></i> are some of my favourite artists of this generation whom I follow. <br>
+				While you're here, do check out some of my sketches, down below.<br> <br><a class="CV"
+					href="resume.html" target="_blank"> &nbsp Download my C.V. &nbsp </a>
+				<a class="CV" href="#artboard">Check out my Artboards</a>
+			</div>
+
+			<div class="box2">
+
+				<div class="box2a">
+					<h3>
+						<p><br>Some interesting blogs right here</p><br><br>
+						<a href="blog.html">
+							read more.....
+						</a><br>
+					</h3><br><br>
+
+				</div>
+				<div class="box2b">
+					<h3><br>
+						<p>Wanna contact me?
+							Do not hesitate...</p><br><br>
+						<a href="contact.html">
+							read more....
+
+						</a>
+					</h3>
+					<br><br>
+				</div>
+
+
+			</div>
+
+		</div>
+	</section>
+	<section class="c-section" id="artboard">
+		<!-- This section is for the image slider in my window, to showcase my works. -->
+		<div class="c-container">
+
+			<div class="c-slide">
+				<!-- This division has images. -->
+				<img src="../images/b/a6.jpg" id="lastclone" style="width: 1000px;">
+				<img src="../images/b/a01.jpg" style="width: 1000px;">
+				<img src="../images/b/a1.jpg" style="width: 1000px;">
+				<img src="../images/b/a2.jpg" style="width: 1000px;">
+				<img src="../images/b/a9.jpg" style="width: 1000px;">
+				<img src="../images/b/a3.jpg" style="width: 1000px;">
+				<img src="../images/b/a5.jpg" style="width: 1000px;">
+				<img src="../images/b/a6.jpg" style="width: 1000px;">
+				<img src="../images/b/a01.jpg" id="firstclone" style="width: 1000px;">
+			</div>
+		</div>
+		<!-- Buttons to change the image. -->
+		<button id="prevBtn" class="CV">
+			<</button> <button id="nextBtn" class="CV">>
+		</button>
+		<script src="../JavaScript/app.js"></script><br> <!-- Linking the javascript file -->
+
+	</section>
+</body>
+<footer>
+	<p>copyright &copy;Chintan Karki,2020 </p>
+</footer>
+
+</html>

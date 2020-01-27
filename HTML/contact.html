@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Contact Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/contact.css"><!-- CSS3 file is linked through this. -->
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<!-- to import fonts from google-fonts,the link is imported.  -->
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<!-- to import fonts from google-fonts,the link is imported.  -->
+	<script type="text/javascript">
+		// javascript 
+		/*Internal JavaScript to make image slider functional.*/
+		function validate() {
+			var username = document.forms["myForm"]["name"].value;
+			var Email = document.forms["myForm"]["email"].value;
+			if (username == "" || Email == "") {
+				alert("Please fill all the fields with '*' notations i.e. your Name and Email with valid data.");
+				return false;
+			}
+			else if (username == " " || Email == " ") {
+				alert("Please fill all the fields with '*' notations i.e. your Name and Email with valid data.");
+				return false;
+			}
+			else {
+				alert("Thanks for your time. ");
+			}
+		}
+
+	</script>
+</head>
+
+<body>
+	<header>
+		<!-- Header
+			Setting up the header layout.  -->
+		<nav>
+			<!-- Navigation
+					Setting up Navigation Bar layout.  -->
+			<div class="row clearfix">
+				<ul class="main-nav animated slideInDown" id="check-class">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="aboutme.html">About Me</a></li>
+					<li class="active"><a href="contact.html">Contact Me</a></li>
+					<li><a href="References.html">References</a></li>
+
+				</ul>
+				<div class="logoe">
+					<a href="index.html" id="logo">CHINTAN</a>
+				</div>
+
+
+			</div>
+
+
+		</nav>
+
+	</header><br>
+
+	<div class="contact-title">
+
+		<h2>Happy to be in touch with you!</h2>
+		<br>
+		<br>
+
+
+	</div>
+	<div class="contact-form">
+		<!-- Container
+				Setting up container layout for forms and buttons.  -->
+		<form onsubmit="return validate();" name="myForm">
+			<!-- javascript activates if action taken  -->
+			<input type="text" name="name" class="form-control" placeholder=" &nbsp Your name*" /><br>
+			<input type="Email" name="email" class="form-control" placeholder=" &nbsp Your Email*" /><br>
+			<textarea name="message" class="form-control" placeholder="    Any messages??"></textarea><br>
+			<button type="submit" class="submit">Submit</button>
+
+
+		</form>
+
+	</div><br>
+
+
+
+</body>
+<footer>
+	<!-- setting up the footer  -->
+	<p>copyright &copy;Chintan Karki,2020 </p>
+</footer>
+
+</html>
